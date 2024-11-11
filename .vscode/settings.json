@@ -1,3 +1,10 @@
 {
-  "cSpell.words": ["hookform", "shadcn"]
+  "cSpell.words": [
+    "appwrite",
+    "clsx",
+    "hookform",
+    "shadcn",
+    "tailwindcss",
+    "turbopack"
+  ]
 }
