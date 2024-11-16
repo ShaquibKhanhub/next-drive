@@ -88,6 +88,7 @@ export const verifySecret = async ({
       httpOnly: true,
       sameSite: "strict",
       secure: true,
+      maxAge: 60 * 60 * 24 * 7, // 7 days (makes the cookie persistent)
     });
 
     return parseStringify({ sessionId: session.$id });
@@ -138,4 +139,3 @@ export const singInUser = async ({ email }: { email: string }) => {
     handleError(error, "Failed to sign in user");
   }
 };
-

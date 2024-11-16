@@ -107,7 +107,7 @@ export const formatDateTime = (isoString: string | null | undefined) => {
   ];
   const month = monthNames[date.getMonth()];
 
-  return `${time}, ${day} ${month}`;
+  return `${time} | ${day} ${month}`;
 };
 
 export const getFileIcon = (

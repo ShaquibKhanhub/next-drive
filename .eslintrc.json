@@ -1,4 +1,7 @@
 {
   "extends": ["next/core-web-vitals", "next/typescript"],
-  "react/prop-types": "off",
+  "rules": {
+    "no-undef": "off"
+  },
+  "react/prop-types": "off"
 }
