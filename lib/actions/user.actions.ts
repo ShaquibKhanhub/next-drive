@@ -88,7 +88,7 @@ export const verifySecret = async ({
       httpOnly: true,
       sameSite: "strict",
       secure: true,
-      maxAge: 60 * 60 * 24 * 7, // 7 days (makes the cookie persistent)
+      maxAge: 60 * 60 * 24 
     });
 
     return parseStringify({ sessionId: session.$id });

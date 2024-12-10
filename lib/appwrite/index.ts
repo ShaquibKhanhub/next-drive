@@ -12,11 +12,9 @@ export const createSessionClient = async () => {
 
   const session = (await cookies()).get("appwrite-session");
 
-  if (!session || !session.value) throw new Error("No session");
-
-  // If no session, redirect to login page
+  // Redirect if no session exists
   if (!session || !session.value) {
-    redirect("/sign-in"); // Redirect user to login page
+    redirect("/sign-in");
   }
 
   client.setSession(session.value);
